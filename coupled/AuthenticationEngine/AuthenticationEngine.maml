@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDPlusPlus_Builder_Version_1.0.0>
+  <top>
+    <components> bpm@BillPaymentManager pv@PasswordVerifier anv@AccountNumberVerifier&#xd;</components>
+    <out> ba&#xd;</out>
+    <out> logout&#xd;</out>
+    <in> an&#xd;</in>
+    <Link> an AccountNumber_IN@anv&#xd;</Link>
+    <Link> logout_OUT@anv logout&#xd;</Link>
+    <Link> ValidAccountNumber_OUT@anv VAN_IN@pv&#xd;</Link>
+    <Link> IVPN_OUT@pv IVPN_IN@pv&#xd;</Link>
+    <Link> VPN_OUT@pv VPN_IN@bpm&#xd;</Link>
+    <Link> IBA_OUT@bpm IBA_IN@bpm&#xd;</Link>
+    <Link> VBA_OUT@bpm ba&#xd;</Link>
+  </top>
+  <bpm>
+    <distribution> normal&#xd;</distribution>
+    <mean> 4&#xd;</mean>
+    <deviation> 2 &#xd;</deviation>
+  </bpm>
+  <pv>
+    <distribution> normal&#xd;</distribution>
+    <mean> 4&#xd;</mean>
+    <deviation> 2 &#xd;</deviation>
+  </pv>
+  <anv>
+    <distribution> normal&#xd;</distribution>
+    <mean> 4&#xd;</mean>
+    <deviation> 2 &#xd;</deviation>
+  </anv>
+</CDPlusPlus_Builder_Version_1.0.0>

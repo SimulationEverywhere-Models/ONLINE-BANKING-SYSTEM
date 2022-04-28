@@ -1,0 +1,8 @@
+Mensaje I / 00:00:00:000 / Root(00) para top(01)
+Mensaje I / 00:00:00:000 / top(01) para bpm(02)
+Mensaje I / 00:00:00:000 / top(01) para pv(03)
+Mensaje I / 00:00:00:000 / top(01) para anv(04)
+Mensaje D / 00:00:00:000 / bpm(02) / ... para top(01)
+Mensaje D / 00:00:00:000 / pv(03) / ... para top(01)
+Mensaje D / 00:00:00:000 / anv(04) / ... para top(01)
+Mensaje D / 00:00:00:000 / top(01) / ... para Root(00)

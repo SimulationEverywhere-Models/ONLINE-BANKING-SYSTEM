@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDPlusPlus_Builder_Version_1.0.0>
+  <top>
+    <components> AE aam@AccountAccessManager tpm@TransactionProcessManager&#xd;</components>
+    <out> ab&#xd;</out>
+    <out> logout&#xd;</out>
+    <in> login&#xd;</in>
+    <Link> login login@aam&#xd;</Link>
+    <Link> logout@aam logout&#xd;</Link>
+    <Link> UAB_OUT@tpm ab&#xd;</Link>
+    <Link> LOGOUT@tpm ian@aam&#xd;</Link>
+    <Link> logout@AE ian@aam&#xd;</Link>
+    <Link> van@aam an@AE&#xd;</Link>
+    <Link> ba@AE VBA_IN@tpm&#xd;</Link>
+  </top>
+  <AE>
+    <components> bpm@BillPaymentManager pv@PasswordVerifier anv@AccountNumberVerifier&#xd;</components>
+    <out> ba&#xd;</out>
+    <out> logout&#xd;</out>
+    <in> an&#xd;</in>
+    <Link> an AccountNumber_IN@anv&#xd;</Link>
+    <Link> logout_OUT@anv logout&#xd;</Link>
+    <Link> ValidAccountNumber_OUT@anv VAN_IN@pv&#xd;</Link>
+    <Link> IVPN_OUT@pv IVPN_IN@pv&#xd;</Link>
+    <Link> VPN_OUT@pv VPN_IN@bpm&#xd;</Link>
+    <Link> IBA_OUT@bpm IBA_IN@bpm&#xd;</Link>
+    <Link> VBA_OUT@bpm ba&#xd;</Link>
+  </AE>
+  <bpm>
+    <distribution> normal&#xd;</distribution>
+    <mean> 4&#xd;</mean>
+    <deviation> 2 &#xd;</deviation>
+  </bpm>
+  <pv>
+    <distribution> normal&#xd;</distribution>
+    <mean> 4&#xd;</mean>
+    <deviation> 2 &#xd;</deviation>
+  </pv>
+  <anv>
+    <distribution> normal&#xd;</distribution>
+    <mean> 4&#xd;</mean>
+    <deviation> 2 &#xd;</deviation>
+  </anv>
+  <aam>
+    <distribution> normal&#xd;</distribution>
+    <mean> 2&#xd;</mean>
+    <deviation> 1 &#xd;</deviation>
+  </aam>
+</CDPlusPlus_Builder_Version_1.0.0>

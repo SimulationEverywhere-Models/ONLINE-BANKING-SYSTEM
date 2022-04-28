@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDPlusPlus_Builder_Version_1.0.0>
+  <top>
+    <components> anv@AccountNumberVerifier&#xd;</components>
+    <out> ValidAccountNumber&#xd;</out>
+    <out> logout &#xd;</out>
+    <in> AccountNumber &#xd;</in>
+    <Link> AccountNumber  AccountNumber_IN@anv&#xd;</Link>
+    <Link> ValidAccountNumber_OUT@anv ValidAccountNumber&#xd;</Link>
+    <Link> logout_OUT@anv logout&#xd;</Link>
+  </top>
+</CDPlusPlus_Builder_Version_1.0.0>
